@@ -1,0 +1,19 @@
+# Never commit credentials.
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.DS_Store
+
+# Optional: large experiment outputs are not needed for deployment.
+plots/
+rag_results/
+evaluation_reports/
+evaluate.ipynb
+data/qa_pairs.csv
